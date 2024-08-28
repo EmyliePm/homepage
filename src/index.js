@@ -25,3 +25,16 @@ typewriter
   .deleteChars(12)
   .pauseFor(1000)
   .start();
+
+function changeTheme() {
+  let body = document.querySelector("body");
+  body.classList.toggle("light");
+  let buttonText = document.querySelector(".lightThemeButton");
+  if (body.classList.contains("dark")) {
+    buttonText.innerHTML = "Dark Theme";
+  } else {
+    buttonText.innerHTML = "Light Theme";
+  }
+}
+let themeButton = document.querySelector(".lightThemeButton");
+themeButton.addEventListener("click", changeTheme);
