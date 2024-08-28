@@ -47,19 +47,31 @@ body {
 }
 .lightThemeButton {
   font-size: 15px;
-  background: black;
-  color: white;
+  background: rgba(140, 23, 155, 0.26);
+  color: rgba(255, 255, 255, 0.699);
   display: flex;
-  box-shadow: 0 30px 50px black;
+  box-shadow: black;
   border-radius: 16px;
   padding: 5px;
   box-sizing: border-box;
   margin: 10px;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: 45px;
   font-family: "Briem Hand", cursive, sans-serif;
 }
+
 .lightThemeButton:hover {
   color: black;
   background: white;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 200ms ease-in-out;
+}
+
+.light {
+  background-image: url("../src/images/asrto_white.jpg");
+}
+.light .sidebarContainer {
+  background: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.514);
 }
